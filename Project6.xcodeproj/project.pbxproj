@@ -10,6 +10,7 @@
 		46061ABF218A128E004FAAAA /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46061ABE218A128E004FAAAA /* CharacterViewController.swift */; };
 		46061AC1218A1914004FAAAA /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46061AC0218A1914004FAAAA /* VehicleViewController.swift */; };
 		46061AC3218A1975004FAAAA /* StartshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46061AC2218A1975004FAAAA /* StartshipsViewController.swift */; };
+		460A7CCA21936923007CD619 /* NetworkMangager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A7CC921936923007CD619 /* NetworkMangager.swift */; };
 		462349FF2176001800140CE9 /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462349FE2176001800140CE9 /* Starships.swift */; };
 		46234A012176002C00140CE9 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46234A002176002C00140CE9 /* Vehicles.swift */; };
 		46234A032176003500140CE9 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46234A022176003500140CE9 /* People.swift */; };
@@ -18,7 +19,6 @@
 		4644C85A21759440004D0213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85821759440004D0213 /* Main.storyboard */; };
 		4644C85C21759441004D0213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85B21759441004D0213 /* Assets.xcassets */; };
 		4644C85F21759441004D0213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85D21759441004D0213 /* LaunchScreen.storyboard */; };
-		466B36EA219202080098D138 /* NetworkMangager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B36E9219202080098D138 /* NetworkMangager.swift */; };
 		466B36F0219209EB0098D138 /* StarshipsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B36EF219209EB0098D138 /* StarshipsCollection.swift */; };
 		466B36F2219217170098D138 /* apiclient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B36F1219217170098D138 /* apiclient.swift */; };
 		46E51A432176093B009BC577 /* StubPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E51A422176093B009BC577 /* StubPeople.swift */; };
@@ -30,6 +30,7 @@
 		46061ABE218A128E004FAAAA /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		46061AC0218A1914004FAAAA /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		46061AC2218A1975004FAAAA /* StartshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartshipsViewController.swift; sourceTree = "<group>"; };
+		460A7CC921936923007CD619 /* NetworkMangager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMangager.swift; sourceTree = "<group>"; };
 		462349FE2176001800140CE9 /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
 		46234A002176002C00140CE9 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
 		46234A022176003500140CE9 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		4644C85B21759441004D0213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4644C85E21759441004D0213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4644C86021759441004D0213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		466B36E9219202080098D138 /* NetworkMangager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMangager.swift; path = "../../CodeChallenges/Tin Roof iOS Project/Tin Roof iOS Project/Networking/NetworkMangager.swift"; sourceTree = "<group>"; };
 		466B36EF219209EB0098D138 /* StarshipsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipsCollection.swift; path = "../../../../../Downloads/CodeChallenge-master/CodeChallenge/Models/StarshipsCollection.swift"; sourceTree = "<group>"; };
 		466B36F1219217170098D138 /* apiclient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiclient.swift; sourceTree = "<group>"; };
 		46E51A422176093B009BC577 /* StubPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPeople.swift; sourceTree = "<group>"; };
@@ -94,8 +94,6 @@
 		4644C84821759440004D0213 = {
 			isa = PBXGroup;
 			children = (
-				466B36E9219202080098D138 /* NetworkMangager.swift */,
-				466B36F1219217170098D138 /* apiclient.swift */,
 				4644C85321759440004D0213 /* Project6 */,
 				4644C85221759440004D0213 /* Products */,
 			);
@@ -112,6 +110,8 @@
 		4644C85321759440004D0213 /* Project6 */ = {
 			isa = PBXGroup;
 			children = (
+				460A7CC921936923007CD619 /* NetworkMangager.swift */,
+				466B36F1219217170098D138 /* apiclient.swift */,
 				4644C85621759440004D0213 /* ViewController.swift */,
 				46061ABC218A1027004FAAAA /* Model */,
 				46061ABD218A1042004FAAAA /* Controller */,
@@ -200,10 +200,10 @@
 				46061AC3218A1975004FAAAA /* StartshipsViewController.swift in Sources */,
 				46061AC1218A1914004FAAAA /* VehicleViewController.swift in Sources */,
 				4644C85721759440004D0213 /* ViewController.swift in Sources */,
-				466B36EA219202080098D138 /* NetworkMangager.swift in Sources */,
 				4644C85521759440004D0213 /* AppDelegate.swift in Sources */,
 				466B36F2219217170098D138 /* apiclient.swift in Sources */,
 				46E51A4721760D08009BC577 /* StubStarships.swift in Sources */,
+				460A7CCA21936923007CD619 /* NetworkMangager.swift in Sources */,
 				462349FF2176001800140CE9 /* Starships.swift in Sources */,
 				46061ABF218A128E004FAAAA /* CharacterViewController.swift in Sources */,
 				46234A032176003500140CE9 /* People.swift in Sources */,
