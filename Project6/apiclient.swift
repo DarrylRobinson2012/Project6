@@ -8,14 +8,14 @@
 
 import Foundation
 struct TaskManger {
-    static func fetchStarships(completion: @escaping ([Starships]) -> Void)
+    static func fetchStarships(completion: @escaping ([String:[Starships]]) -> Void)
     {
         print("func is called")
         NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/starships")!) { data
             in
             let decoder = JSONDecoder()
             
-            if let starships = try? decoder.decode([Starships].self, from: data){
+            if let starships = try? decoder.decode([String:[Starships]].self, from: data){
                 print(starships)
                 completion(starships)
             }

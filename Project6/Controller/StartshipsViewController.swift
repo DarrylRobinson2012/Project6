@@ -11,7 +11,7 @@ import UIKit
 
 class StarshipsViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var starWhips = [Starships]()
+    var starWhips = [String:[Starships]]()
 
     @IBOutlet weak var bornLabel: UILabel!
     

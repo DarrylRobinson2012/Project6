@@ -10,6 +10,6 @@ import Foundation
 
 struct StubStarships {
     static var starships: Starships {
-        return Starships(make: "Sienar Fleet Systems", cost: 240000, length: 38, cLass: "Landing Craft", crew: 5)
+        return Starships(make: "Sienar Fleet Systems", cost: "40000", length: "38", cLass: "Landing Craft", crew: "5")
     }
 }

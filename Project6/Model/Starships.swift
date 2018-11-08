@@ -10,10 +10,10 @@ import Foundation
 
 struct Starships: Codable {
     var make: String
-    var cost: Int
-    var length: Double
+    var cost: String
+    var length: String
     var cLass: String
-    var crew: Int
+    var crew: String
     
     
     enum CodingKeys: String, CodingKey {
