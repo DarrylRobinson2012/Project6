@@ -19,6 +19,8 @@
 		4644C85A21759440004D0213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85821759440004D0213 /* Main.storyboard */; };
 		4644C85C21759441004D0213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85B21759441004D0213 /* Assets.xcassets */; };
 		4644C85F21759441004D0213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4644C85D21759441004D0213 /* LaunchScreen.storyboard */; };
+		464869F621998B7700323816 /* PeopleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464869F521998B7700323816 /* PeopleArray.swift */; };
+		464869F821998D2500323816 /* VehiclesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464869F721998D2500323816 /* VehiclesArray.swift */; };
 		466B36F0219209EB0098D138 /* StarshipsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B36EF219209EB0098D138 /* StarshipsCollection.swift */; };
 		466B36F2219217170098D138 /* apiclient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B36F1219217170098D138 /* apiclient.swift */; };
 		46E51A432176093B009BC577 /* StubPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E51A422176093B009BC577 /* StubPeople.swift */; };
@@ -41,6 +43,8 @@
 		4644C85B21759441004D0213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4644C85E21759441004D0213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4644C86021759441004D0213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464869F521998B7700323816 /* PeopleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleArray.swift; sourceTree = "<group>"; };
+		464869F721998D2500323816 /* VehiclesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesArray.swift; sourceTree = "<group>"; };
 		466B36EF219209EB0098D138 /* StarshipsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipsCollection.swift; path = "../../../../../Downloads/CodeChallenge-master/CodeChallenge/Models/StarshipsCollection.swift"; sourceTree = "<group>"; };
 		466B36F1219217170098D138 /* apiclient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiclient.swift; sourceTree = "<group>"; };
 		46E51A422176093B009BC577 /* StubPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPeople.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				46234A022176003500140CE9 /* People.swift */,
 				462349FE2176001800140CE9 /* Starships.swift */,
 				466B36EF219209EB0098D138 /* StarshipsCollection.swift */,
+				464869F521998B7700323816 /* PeopleArray.swift */,
+				464869F721998D2500323816 /* VehiclesArray.swift */,
 				46234A002176002C00140CE9 /* Vehicles.swift */,
 			);
 			path = Model;
@@ -195,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464869F821998D2500323816 /* VehiclesArray.swift in Sources */,
 				46234A012176002C00140CE9 /* Vehicles.swift in Sources */,
 				466B36F0219209EB0098D138 /* StarshipsCollection.swift in Sources */,
 				46061AC3218A1975004FAAAA /* StartshipsViewController.swift in Sources */,
@@ -208,6 +215,7 @@
 				46061ABF218A128E004FAAAA /* CharacterViewController.swift in Sources */,
 				46234A032176003500140CE9 /* People.swift in Sources */,
 				46E51A4521760B33009BC577 /* StubVehicles.swift in Sources */,
+				464869F621998B7700323816 /* PeopleArray.swift in Sources */,
 				46E51A432176093B009BC577 /* StubPeople.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,6 @@ import Foundation
 
 struct StubPeople {
     static var people: People {
-        return People(born: "19BBY", home: "Tatooine", height: 1.72, eyes: "Blue", hair: "Blond" )
+        return People(born: "19BBY", home: "Tatooine", height: "1.72", eyes: "Blue", hair: "Blond", name: "" )
     }
 }

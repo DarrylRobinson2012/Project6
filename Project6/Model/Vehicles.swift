@@ -8,10 +8,20 @@
 
 import Foundation
 
-struct Vehicles {
+struct Vehicles: Codable {
     var make: String
-    var cost: Int
-    var length: Double
+    var cost: String
+    var length:  String
     var cLass: String
-    var crew: Int
+    var crew: String
+    var model: String
+    
+    enum CodingKeys: String, CodingKey {
+        case make = "manufacturer"
+        case cost = "cost_in_credits"
+        case length
+        case cLass = "vehicle_class"
+        case crew
+        case model
+    }
 }

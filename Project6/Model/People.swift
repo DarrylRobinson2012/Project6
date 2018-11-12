@@ -8,10 +8,23 @@
 
 import Foundation
 
-struct People {
+struct People: Codable {
     var born: String
     var home: String
-    var height: Double
+    var height: String
     var eyes: String
     var hair: String
+    var name: String
+    
+    enum Codingkeys: String, CodingKey {
+        case name = "name"
+        case born = "birth_year"
+        case home = "homeworld"
+        case height = "height"
+        case eyes = "eye_color"
+        case hair = "hair_color"
+       
+
+        
+    }
 }

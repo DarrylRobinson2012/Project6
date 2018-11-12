@@ -8,20 +8,47 @@
 
 import Foundation
 struct TaskManger {
-    static func fetchStarships(completion: @escaping ([String:[Starships]]) -> Void)
+    static func fetchStarshipsPage1(completion: @escaping (StarshipArray) -> Void)
     {
         print("func is called")
-        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/starships")!) { data
+        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/starships?page=1")!) { data
             in
             let decoder = JSONDecoder()
             
-            if let starships = try? decoder.decode([String:[Starships]].self, from: data){
-                print(starships)
+            if let starships = try? decoder.decode(StarshipArray.self, from: data){
+               // print(starships)
                 completion(starships)
             }
-            
-            
-            
         }
     }
+    static func fetchPeoplePage1(completion: @escaping (PeopleArray) -> Void)
+    {
+        print("func is called")
+        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/people/?page=1")!) { data
+            in
+            let decoder = JSONDecoder()
+            
+            if let people = try? decoder.decode(PeopleArray.self, from: data){
+                 print(people)
+                completion(people)
+            }
+        }
+    }
+    static func fetchVehiclesPage1(completion: @escaping (VehicleArray) -> Void)
+    {
+        print("func is called")
+        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/vehicles/?page=1")!) { data
+            in
+            let decoder = JSONDecoder()
+            
+            if let vehicles = try? decoder.decode(VehicleArray.self, from: data){
+                
+                completion(vehicles)
+            }
+        }
+    }
+    
+    
+   
+
 }

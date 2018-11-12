@@ -14,7 +14,7 @@ struct Starships: Codable {
     var length: String
     var cLass: String
     var crew: String
-    
+    var model: String
     
     enum CodingKeys: String, CodingKey {
         case make = "manufacturer"
@@ -22,6 +22,7 @@ struct Starships: Codable {
         case length
         case cLass = "starship_class"
         case crew
+        case model
         
     }
 }
