@@ -9,14 +9,14 @@
 import Foundation
 
 struct People: Codable {
-    var born: String
-    var home: String
-    var height: String
-    var eyes: String
-    var hair: String
+    var born: String?
+    var home: String?
+    var height: String?
+    var eyes: String?
+    var hair: String?
     var name: String
     
-    enum Codingkeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case name = "name"
         case born = "birth_year"
         case home = "homeworld"

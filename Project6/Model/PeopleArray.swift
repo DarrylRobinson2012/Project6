@@ -13,4 +13,9 @@ struct PeopleArray: Codable{
     var previous: String?
     var results: [People]
     
+    
+    
+    
 }
+
+

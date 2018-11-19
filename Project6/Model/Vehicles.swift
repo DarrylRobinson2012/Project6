@@ -9,6 +9,8 @@
 import Foundation
 
 struct Vehicles: Codable {
+ 
+    
     var make: String
     var cost: String
     var length:  String

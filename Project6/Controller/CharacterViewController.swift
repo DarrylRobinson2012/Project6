@@ -49,34 +49,48 @@ class CharcterViewController: UITableViewController, UIPickerViewDelegate, UIPic
         hairLabel.text = person[row].hair
         mainLabel.text = person[row].name
         
+        TaskManger.fetchPLanet(plantUrl: person[row].home!, completion:{ [unowned self] planet
+            in
+            let personPlanet = planet.name
+            
+            DispatchQueue.main.async {
+                self.homeLabel.text = personPlanet
+            }
+                
+        
     }
-    
+        )
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         TaskManger.fetchPeoplePage1{ [unowned self] people in
             self.person = people.results
             
-            print(self.person)
+           // print(self.person)
             print("******************************")
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.pickwheel.reloadAllComponents()
-                var largest = 0
-             
-                for people in self.person {
-                    
-                    let person = Double(people.height)!
-                    if Int(person) > largest {
-                        self.LargestLabel.text = people.name
-                        largest = Int(person)
-                    }
-                    
-                    
-                    
-                    
-                }
                 
+                
+                var peopleLengthArray = [Int]()
+              
+                
+                for people in self.person {
+                    peopleLengthArray.append(Int(people.height!)!)
+                }
+                let largest = peopleLengthArray.max()
+                let smallest = peopleLengthArray.min()
+                
+                for people in self.person {
+                    if Int(people.height!) == largest {
+                        self.LargestLabel.text = people.name
+                    }
+                    if Int(people.height!) == smallest {
+                        self.smallestLabel.text = people.name
+                    }
+                }
                 
             }
             

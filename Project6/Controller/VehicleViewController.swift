@@ -58,24 +58,31 @@ class VehicleViewController: UITableViewController, UIPickerViewDelegate, UIPick
             self.whips = whips.results
             
             
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.pickwheel.reloadAllComponents()
-                var largest = 0
+             
            
-                for whip in self.whips{
-                    
-                    let whipsLength = Double(whip.length)
-                    if Int(whipsLength!) > largest {
-                        self.LargestLabel.text = whip.model
-                        largest = Int(whipsLength!)
+                var wipslength = [Double]()
+                
+                for whips in self.whips {
+                    wipslength.append(Double(whips.length)!)
+                }
+                let largest = wipslength.max()
+                let smallest = wipslength.min()
+                
+                for whips in self.whips {
+                    if Double(whips.length) == largest {
+                        self.LargestLabel.text = whips.model
                     }
-                    
-                    
-                    
-                    
+                    if Double(whips.length) == smallest {
+                        self.smallestLabel.text = whips.model
+                    }
                 }
                 
+            
+            
                 
             }
             

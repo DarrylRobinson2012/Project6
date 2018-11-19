@@ -58,27 +58,29 @@ class StarshipsViewController: UITableViewController, UIPickerViewDelegate, UIPi
         
         TaskManger.fetchStarshipsPage1 { [unowned self] starships in
             self.starWhips = starships.results
-            
-            print(self.starWhips)
+        
+            //print(self.starWhips)
             print("******************************")
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.pickwheel.reloadAllComponents()
-                print(self.starWhips)
-                var largest = 0
+                //print(self.starWhips)
+                
                 var starshipslength = [Double]()
-               // var smallest = 0
-                for starwhips in self.starWhips{
-                    
-                    let starwhipsLength = Double(starwhips.length)!
-                    if Int(starwhipsLength) > largest {
-                        self.LargestLabel.text = starwhips.model
-                        largest = Int(starwhipsLength)
+                
+                for ships in self.starWhips {
+                    starshipslength.append(Double(ships.length)!)
+                }
+                let largest = starshipslength.max()
+                let smallest = starshipslength.min()
+                
+                for ships in self.starWhips {
+                    if Double(ships.length) == largest {
+                        self.LargestLabel.text = ships.model
                     }
-                    
-                   
-                    
-                    
+                    if Double(ships.length) == smallest {
+                        self.smallestLabel.text = ships.model
+                    }
                 }
                 
                 

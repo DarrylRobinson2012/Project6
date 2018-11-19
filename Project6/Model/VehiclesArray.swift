@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct VehicleArray: Codable{
+struct VehicleArray: Codable{    
     var count : Int
     var next: String
     var previous: String?

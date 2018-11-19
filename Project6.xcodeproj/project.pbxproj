@@ -11,6 +11,7 @@
 		46061AC1218A1914004FAAAA /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46061AC0218A1914004FAAAA /* VehicleViewController.swift */; };
 		46061AC3218A1975004FAAAA /* StartshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46061AC2218A1975004FAAAA /* StartshipsViewController.swift */; };
 		460A7CCA21936923007CD619 /* NetworkMangager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A7CC921936923007CD619 /* NetworkMangager.swift */; };
+		460AA403219D99EF00698093 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AA402219D99EF00698093 /* Planet.swift */; };
 		462349FF2176001800140CE9 /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462349FE2176001800140CE9 /* Starships.swift */; };
 		46234A012176002C00140CE9 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46234A002176002C00140CE9 /* Vehicles.swift */; };
 		46234A032176003500140CE9 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46234A022176003500140CE9 /* People.swift */; };
@@ -33,6 +34,7 @@
 		46061AC0218A1914004FAAAA /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		46061AC2218A1975004FAAAA /* StartshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartshipsViewController.swift; sourceTree = "<group>"; };
 		460A7CC921936923007CD619 /* NetworkMangager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMangager.swift; sourceTree = "<group>"; };
+		460AA402219D99EF00698093 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		462349FE2176001800140CE9 /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
 		46234A002176002C00140CE9 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
 		46234A022176003500140CE9 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				46061ABB218A100B004FAAAA /* StubData */,
 				46234A022176003500140CE9 /* People.swift */,
+				460AA402219D99EF00698093 /* Planet.swift */,
 				462349FE2176001800140CE9 /* Starships.swift */,
 				466B36EF219209EB0098D138 /* StarshipsCollection.swift */,
 				464869F521998B7700323816 /* PeopleArray.swift */,
@@ -210,6 +213,7 @@
 				4644C85521759440004D0213 /* AppDelegate.swift in Sources */,
 				466B36F2219217170098D138 /* apiclient.swift in Sources */,
 				46E51A4721760D08009BC577 /* StubStarships.swift in Sources */,
+				460AA403219D99EF00698093 /* Planet.swift in Sources */,
 				460A7CCA21936923007CD619 /* NetworkMangager.swift in Sources */,
 				462349FF2176001800140CE9 /* Starships.swift in Sources */,
 				46061ABF218A128E004FAAAA /* CharacterViewController.swift in Sources */,

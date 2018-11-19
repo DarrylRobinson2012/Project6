@@ -24,12 +24,13 @@ struct TaskManger {
     static func fetchPeoplePage1(completion: @escaping (PeopleArray) -> Void)
     {
         print("func is called")
-        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/people/?page=1")!) { data
+        NetworkManager.fetchEndpoint(URL(string: "https://swapi.co/api/people?page=2")!) { data
             in
             let decoder = JSONDecoder()
             
             if let people = try? decoder.decode(PeopleArray.self, from: data){
-                 print(people)
+                 //print(people)
+               
                 completion(people)
             }
         }
@@ -47,8 +48,32 @@ struct TaskManger {
             }
         }
     }
+    static func fetchPLanet(plantUrl: String, completion: @escaping (Planet) -> Void)
+    {
+        print("func is called")
+        NetworkManager.fetchEndpoint(URL(string: plantUrl)!) { data
+            in
+            let decoder = JSONDecoder()
+            
+            if let planet = try? decoder.decode(Planet.self, from: data){
+              
+                completion(planet)
+            }
+        }
+    }
     
-    
-   
+    static func fetchpeople(people: String, completion: @escaping (People) -> Void)
+    {
+        print("func is called")
+        NetworkManager.fetchEndpoint(URL(string: people)!) { data
+            in
+            let decoder = JSONDecoder()
+            
+            if let people = try? decoder.decode(People.self, from: data){
+                
+                completion(people)
+            }
+        }
+    }
 
 }
